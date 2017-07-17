@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Local Weather App</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="public/css/bootstrap.min.css">
+        <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="public/css/weather.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="banner text-center">
+                <h1>Local Weather App</h1>
+                <h3 class="tagline">shows the weather of current location</h3> 
+            </header>
+            <main>
+                <section class="weather-box">
+                    <div class="result">
+                        <div class="clearfix">
+                            <canvas id="weather-icon1" width="128" height="128"></canvas>
+                            <span class="weather-temp"></span>
+                        </div>
+                        <p class="weather-icon-text text-center"></p>            
+                    </div>
+                    <button class="btn toggle-temp">Toggle Temp Unit</button>
+                </section>
+            </main>
+            <footer class="text-center">
+                <p>by <a target="_blank" href="http://about.me/Dikaeinstein">Dikaeinstein</a></p>
+            </footer>
+            <script src="public/js/jquery-3.2.1.min.js"></script>
+            <script src="public/js/skycons.js"></script>
+            <script src="public/js/weather.js"></script>
+        </div>
+    </body>
+</html>
